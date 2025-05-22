@@ -1,0 +1,56 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "python.languageServer": "Pylance",
+
+    // General editor settings
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    "files.associations": {
+        "*.py": "python"
+    },
+    "files.autoSave": "onFocusChange",
+    "files.eol": "\n", // Enforce LF line endings
+
+    // Python specific settings
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.rulers": [
+            88,
+            100
+        ]
+    },
+
+    // Ruff specific settings
+    "ruff.enable": true,
+    "ruff.lint.args": [],
+    "ruff.format.args": [],
+    // "ruff.lint.run": "onSave", // This is often default or handled by editor.codeActionsOnSave
+
+    // Path to Python interpreter (can be set per project or globally)
+    // For template purposes, it's often better to let users set this or use a .env file for python.pythonPath
+    // "python.pythonPath": "${workspaceFolder}/venv/bin/python", // Example, if venv is at root
+    // "python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python", // For newer VS Code versions
+
+    // Testing settings (example for pytest)
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+
+    // Terminal settings
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${workspaceFolder}"
+    },
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "${workspaceFolder}"
+    },
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${workspaceFolder}"
+    }
+}
