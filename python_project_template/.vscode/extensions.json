@@ -1,0 +1,19 @@
+{
+    "recommendations": [
+        "ms-python.python",         // Python language support by Microsoft
+        "ms-python.vscode-pylance", // Pylance (IntelliSense, type checking)
+        "charliermarsh.ruff",       // Ruff linter and formatter
+        "njpwerner.autodocstring",  // Python Docstring Generator
+        "ms-azuretools.vscode-docker", // Docker support, if project uses Docker
+        "github.copilot",           // GitHub Copilot, if user has subscription (optional)
+        "ms-vscode-remote.remote-containers", // For dev containers
+        "tamasfe.even-better-toml", // TOML language support (for pyproject.toml)
+        "visualstudioexptteam.vscodeintellicode", // IntelliCode AI-assisted development
+        "littlefoxteam.vscode-python-test-adapter" // Test Explorer UI for Python
+    ],
+    "unwantedRecommendations": [
+        // Example: if you want to discourage use of a specific older linter
+        // "ms-python.flake8",
+        // "ms-python.pylint"
+    ]
+}
